@@ -1,5 +1,6 @@
 var container = $('<div class="group">');
-var btn = $('<button>').text('izvuci brojeve');
+var btn = $('<button>').text('Izvuci brojeve');
+var btn2 = $('<button>').text('Pokusaj ponovo');
 var number = 0;
 var heading = $('<h1>');
 var column = 1;
@@ -19,6 +20,7 @@ for(var i = 0; i < 10; i++){
 }
 
 $('body').append(btn);
+$('body').append(btn2);
 
 btn.on('click', function (){
    var brojevi = computerRandomChoice();
@@ -31,7 +33,11 @@ $('.group').each(function() {
    var brojPogodaka = $(this).find('.active.selected').length;
    var brojGrupe = $(this).find('h1').text();
     console.log('broj pogodaka za kolonu ' + brojGrupe + ' je ' + brojPogodaka);
-})
+  btn2.on('click', function(){
+  $('.active ').removeClass('active');
+    $('p').hide();
+    })
+   })
 })
 
 $('button').on('click', function() {
