@@ -32,10 +32,13 @@ btn.on('click', function (){
 $('.group').each(function() {
    var brojPogodaka = $(this).find('.active.selected').length;
    var brojGrupe = $(this).find('h1').text();
-    console.log('broj pogodaka za kolonu ' + brojGrupe + ' je ' + brojPogodaka);
+  var listic = $('<h4>');
+  $('body').append(listic);
+  listic.text('Broj pogodaka za kolonu ' + brojGrupe + ' je ' + brojPogodaka + ';');
   btn2.on('click', function(){
   $('.active ').removeClass('active');
     $('p').hide();
+    $('h4').remove();
     })
    })
 })
