@@ -1,0 +1,21 @@
+div {
+  width: 100px;
+  float: left;
+  border-right: 1px solid red;
+}
+.group button {
+  width: 33px;
+}
+.active {
+  background: green;
+}
+.selected {
+  background: orange;
+}
+.active.selected {
+  background: red;
+}
+h1{
+  text-align: center;
+  margin: 0 0 20px;
+}
