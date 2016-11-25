@@ -9,9 +9,6 @@ div {
 .active {
   background: green;
 }
-.selected {
-  background: orange;
-}
 .active.selected {
   background: red;
 }
