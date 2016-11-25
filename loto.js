@@ -27,7 +27,7 @@ btn.on('click', function (){
    brojevi.forEach(function(broj) {
       $('.active.btn'+broj).addClass('selected')
    });
-  $('body').append('<br>' + '<strong>' + brojevi.join(', ') + '</strong>');
+  $('body').append('<br>' + '<p>' + brojevi.join(', ') + '</p>');
    
 $('.group').each(function() {
    var brojPogodaka = $(this).find('.active.selected').length;
